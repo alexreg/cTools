@@ -456,7 +456,7 @@ testnan(double *a, int n)
   int i ;
 
   for (i=0; i<n; i++) {
-   if (!finite(a[i])) fatalx("(testnan) fails:  index %d\n",i) ;
+   if (!isfinite(a[i])) fatalx("(testnan) fails:  index %d\n",i) ;
   }
 }
 void getgall(SNP *cupt, int *x, int n) 
